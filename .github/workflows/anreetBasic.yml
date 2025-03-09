@@ -31,9 +31,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '23'
-          java-package: 'jdk'
-          distribution: 'adoptopenjdk'
-          check-latest: false
+          distribution: 'temurin'
       - name: Build with Maven
         run: mvn clean install -DskipTests
       - name: Run tests with Maven
